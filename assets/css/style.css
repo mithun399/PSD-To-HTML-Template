@@ -1,0 +1,333 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.s_hding h1{
+    color: #02918c;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.s_hding img{
+    margin: 35px 0px;
+}
+.s_hding p{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 400;
+    line-height: 40px;
+}
+/* menu part css */
+#menu_part{
+    background: #02918c;
+}
+.logo{
+    width: 30%;
+    float: left;
+    padding: 26px 0px;
+}
+.menu{
+    width: 70%;
+    float: left;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+    float: left;
+    list-style-type: none;
+}
+.menu ul li a{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 25px 17px;
+    display: inline-block;
+}
+.menu ul li a:hover{
+    color: #202e2e;
+}
+/* menu part css */
+/* banner part css*/
+#banner{
+    background: url(../img/banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+#banner:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.7);
+    z-index: -1;
+}
+.banner_content h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+.banner_content h1{
+    color: #fff;
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+}
+.banner_content p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+.banner_content img{
+    margin: 50px 0px;
+}
+.banner_content a{
+    color: #0b1016;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #cfc91d;
+    font-weight: 800;
+    padding: 14px 40px;
+    display: inline-block;
+}
+
+/* banner part css end*/
+
+
+/*about part */
+#about{
+    padding: 80px 0px 90px 0px;
+}
+#about .s_hding{
+    text-align: center;
+}
+#about .s_hding span{
+    font-size: 23px;
+    font-weight: 800;
+}
+#about .s_hding p{
+  padding: 0px 137px;
+    text-align: center;
+    
+}
+.about-content{
+    width: 25%;
+    float: left;
+    border-right: 1px solid #d9dbdb;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px; 
+    padding: 30px 20px;
+}
+.about-content i{
+    font-size: 25px;
+    color: #159995;
+    margin-bottom: 10px;
+}
+.about-content h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #b8babd;
+}
+.about-content p{
+    font-size: 11px;
+    color: #b8babd;
+    padding: 0px 48px;
+    margin-top: 15px;
+}
+#last_item{
+    border-right: none;
+}
+/*about part end*/
+/*service part*/
+#service{
+    background: url(../img/service.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    padding: 75px 0px;
+}
+.service_item{
+    width: 50%;
+    padding: 75px 0px;
+}
+.service_content{
+    margin-top: 50px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.service_content i{
+ font-size: 20px;
+    color: #159995;
+    margin-bottom: 10px;
+}
+.service_content h3{
+     font-size: 16px;
+    font-weight: 800;
+    color: #b8babd;
+}
+.service_content p{
+    font-size: 11px;
+    color: #b8babd;
+    font-weight: 800;
+    margin-top: 15px;
+    max-width: 170px;
+    line-height: 20px;
+}
+/*service part end */
+/*my work*/
+#mywork{
+    padding-top: 110px;  
+}
+#mywork .s_hding {
+    text-align: center;
+}
+#mywork .s_hding p{
+    max-width: 690px;
+    margin: auto;
+}
+.wrkimg{
+    margin-top: 60px;
+}
+.wrkitem{
+    float: left;
+    width: 25%;
+    position: relative;
+    line-height: 0;
+}
+.wrkitem img{
+    width: 100%;
+}
+.wrkitem .overly{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    text-align: center;
+    background: rgba(2,145,140,.8);
+    transition: .5s;
+    -webkit-transition: .5s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    line-height: normal;
+    
+    
+}
+.wrkitem:hover .overly{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.wrkitem .overly h3{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.wrkitem .overly p{
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    max-width: 200px;
+    margin: auto;
+}
+/*my work end*/
+/*contact part */
+#contact{
+    padding-top: 90px;
+}
+#contact .s_hding{
+    text-align: center;
+}
+#contact .s_hding p{
+    max-width: 680px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+/*contact part end*/
+/*form part*/
+#form{
+    background: black;
+    padding: 60px 0px;
+    
+}
+.input1{
+    width: 650px;
+    margin: auto;
+}
+#form .form_control{
+    font-size: 16px;
+    color: #7e8287;
+    text-align: center;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 60px;
+    margin-bottom: 25px;
+}
+.msg{
+    width: 750px;
+    margin: auto;
+}
+.msg .msg_control{
+    height: 120px;
+    width: 100%;
+    font-size: 16px;
+    color: #7e8287;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    resize: none;
+}
+.button{
+    margin-top: 50px;
+    text-align: center;
+}
+.button_a{
+    font-size: 14px;
+    color: #0b1016;
+    background: #cfc91d;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 14px 70px;
+    border: none;
+    cursor: pointer;
+}
+/*form part end*/
+#footer{
+    padding: 20px 0px;
+    text-align: center;
+    background: black;
+    color: #7e8287;
+    font-size: 16px;
+}
